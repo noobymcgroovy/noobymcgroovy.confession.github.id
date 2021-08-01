@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Hai manusia yang kusukai</h1>
+    <img src="">
+
+    <h1>Mau ga jadi pacarku</h1>
+    <button id='btnMau' onclick='alert("I love you")'>Mau</button>
+    <button id='btnGamau' onclick='gamau(this)'
+    style="position: absolute">Gamau</button>
+</body>
+
+<script>
+    function gamau (id){
+        var Mau = document.getElementById('btnMau');
+        var i = Math.floor(Math.random()*300)+1;
+        var j = Math.floor(Math.random()*100)+Mau.offsetTop;
+        id.style.left = i + 'px';
+        id.style.top = j+'px';
+    }
+</script>
+
+</html>
